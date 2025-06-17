@@ -418,66 +418,85 @@
                         </div>
             </section>
             <!-- Portfolio section starts here -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2 style="font-weight: 900; text-decoration: wavy; text-align: center;">My Projects</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Portfolio item 1 -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-content">
-                                    <h1 class="project-title ">E-commerce Application</h1>
-                                    <p class="project-description"">
-                                        Built a basic e-commerce app using React Native, showcasing product listings, user interaction, and smooth navigation.
-                                    </p>
-                                </div>
-                                <div class=" portfolio-img">
-                                        <img src="ecom.jpg" alt="AnimalAid" width="400px" height="400px">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio item 2 -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-content">
-                                    <h1 class="project-title">Weather App</h1>
-                                    <p class="project-description">
-                                      Built a weather app using React Native that shows weather information based on user-entered locations.
-                                    </p>
-                                </div>
-                                <div class="portfolio-img">
-                                    <img src="weather.jpg" alt="Be Strong" width="400px" height="400px">
-                                </div>
-                            </div>
-                        </div>
+           <section class="portfolio section" id="portfolio">
+    <div class="container">
+        <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="section-title padd-15" style="width: 100%;">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="portfolio-heading padd-15" style="width: 100%;">
+                <h2 style="font-weight: 900; text-decoration: wavy; text-align: center;">My Projects</h2>
+            </div>
+        </div>
+        <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
 
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-content">
-                                    <h1 class="project-title"">Saloon Website </h1>
-                                    <p class=" project-description">
-                                        Designed and developed a responsive salon website to showcase services, pricing, and appointment booking features.".
-                                        </p>
-                                </div>
-                                <div class="portfolio-img">
-                                    <img src="saloon.jpg" alt="Be Strong" width="400px" height="400px">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h1 style="color: white;justify-content: center;align-items: center;">To see more projects visit to my <a href="https://github.com/harshnorath" style="text-decoration: dashed;color: yellow;">Github Account</a></h1>
+            <!-- Portfolio item 1 -->
+            <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%; padding: 15px; box-sizing: border-box; width: 100%;">
+                <div class="portfolio-item-inner shadow-dark" style="width: 100%;">
+                    <div class="portfolio-content">
+                        <h1 class="project-title" style="text-align: center;">E-commerce Application</h1>
+                        <p class="project-description" style="text-align: center;">
+                            Built a basic e-commerce app using React Native, showcasing product listings, user interaction, and smooth navigation.
+                        </p>
+                    </div>
+                    <div class="portfolio-img">
+                        <img src="ecom.jpg" alt="E-commerce" style="width: 100%; height: auto; display: block;">
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <!-- Portfolio item 2 -->
+            <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%; padding: 15px; box-sizing: border-box; width: 100%;">
+                <div class="portfolio-item-inner shadow-dark" style="width: 100%;">
+                    <div class="portfolio-content">
+                        <h1 class="project-title" style="text-align: center;">Weather App</h1>
+                        <p class="project-description" style="text-align: center;">
+                            Built a weather app using React Native that shows weather information based on user-entered locations.
+                        </p>
+                    </div>
+                    <div class="portfolio-img">
+                        <img src="weather.jpg" alt="Weather App" style="width: 100%; height: auto; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio item 3 -->
+            <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%; padding: 15px; box-sizing: border-box; width: 100%;">
+                <div class="portfolio-item-inner shadow-dark" style="width: 100%;">
+                    <div class="portfolio-content">
+                        <h1 class="project-title" style="text-align: center;">Salon Website</h1>
+                        <p class="project-description" style="text-align: center;">
+                            Designed and developed a responsive salon website to showcase services, pricing, and appointment booking features.
+                        </p>
+                    </div>
+                    <div class="portfolio-img">
+                        <img src="saloon.jpg" alt="Salon" style="width: 100%; height: auto; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 100%; text-align: center; margin-top: 20px;">
+                <h1 style="color: white; text-align: center;">
+                    To see more projects visit my 
+                    <a href="https://github.com/harshnorath" style="text-decoration: dashed; color: yellow;">GitHub Account</a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Responsive behavior using inline <style> block -->
+<style>
+    @media (max-width: 768px) {
+        .portfolio-item {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+</style>
+
 
           
             <!-- portfolio items ends -->
@@ -567,7 +586,7 @@
                     <p>House No. 2038 Rajeev Nagar Galli no. 3 Near sanjay gram new mata road, Gurugram 122001</p>
                 </div>
                 <div class="contact-info-item padd-15">
-                    <div   class="icon"><a href="harshnorath@gmail.com"><i class="fa fa-envelope"></a></i></div>
+                    <div   class="icon"><i class="fa fa-envelope"></i></div>
                     <h4>Email</h4>
                     <p>harshnorath@gmail.com</p>
                 </div>
